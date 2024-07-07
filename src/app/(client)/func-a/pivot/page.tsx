@@ -1,16 +1,9 @@
 'use client'
 import { PivotTableUI } from '@/components/PivotTable'
 import { useCallback, useEffect, useState } from 'react'
+import type { SalesGetResponse } from '@/lib/schema'
 
-interface DataStructure {
-  items: string
-  month: string
-  channel: '直販' | '通販'
-  categories: 'TOPS' | 'OP'
-  sales: number
-}
-
-type DataStructureArray = DataStructure[]
+type DataStructureArray = SalesGetResponse[]
 
 const fetchLocalJson = async (url: string) => {
   const response = await fetch(url)
