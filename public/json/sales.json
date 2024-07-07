@@ -1,0 +1,142 @@
+[
+  {
+    "items": "PRINTCUT",
+    "month": "2024-08",
+    "channel": "直販",
+    "categories": "TOPS",
+    "sales": 1000
+  },
+  {
+    "items": "PRINTKNIT",
+    "month": "2024-08",
+    "channel": "直販",
+    "categories": "TOPS",
+    "sales": 1200
+  },
+  {
+    "items": "CUT",
+    "month": "2024-08",
+    "channel": "直販",
+    "categories": "TOPS",
+    "sales": 1050
+  },
+  {
+    "items": "KNIT",
+    "month": "2024-08",
+    "channel": "直販",
+    "categories": "TOPS",
+    "sales": 900
+  },
+  {
+    "items": "WOMEN",
+    "month": "2024-08",
+    "channel": "直販",
+    "categories": "TOPS",
+    "sales": 1800
+  },
+  {
+    "items": "CUT_OP",
+    "month": "2024-08",
+    "channel": "直販",
+    "categories": "OP",
+    "sales": 2000
+  },
+  {
+    "items": "KNIT_OP",
+    "month": "2024-08",
+    "channel": "直販",
+    "categories": "OP",
+    "sales": 8000
+  },
+  {
+    "items": "WOMEN_OP",
+    "month": "2024-08",
+    "channel": "直販",
+    "categories": "OP",
+    "sales": 4000
+  },
+  {
+    "items": "PRINTCUT",
+    "month": "2024-08",
+    "channel": "通販",
+    "categories": "TOPS",
+    "sales": 1600
+  },
+  {
+    "items": "PRINTKNIT",
+    "month": "2024-08",
+    "channel": "通販",
+    "categories": "TOPS",
+    "sales": 1800
+  },
+  {
+    "items": "CUT",
+    "month": "2024-08",
+    "channel": "通販",
+    "categories": "TOPS",
+    "sales": 1450
+  },
+  {
+    "items": "KNIT",
+    "month": "2024-08",
+    "channel": "通販",
+    "categories": "TOPS",
+    "sales": 9000
+  },
+  {
+    "items": "WOMEN",
+    "month": "2024-08",
+    "channel": "通販",
+    "categories": "TOPS",
+    "sales": 3800
+  },
+  {
+    "items": "CUT_OP",
+    "month": "2024-08",
+    "channel": "通販",
+    "categories": "OP",
+    "sales": 4000
+  },
+  {
+    "items": "KNIT_OP",
+    "month": "2024-08",
+    "channel": "通販",
+    "categories": "OP",
+    "sales": 2000
+  },
+  {
+    "items": "WOMEN_OP",
+    "month": "2024-08",
+    "channel": "通販",
+    "categories": "OP",
+    "sales": 1000
+  },
+  {
+    "items": "PRINTCUT",
+    "month": "2024-09",
+    "channel": "直販",
+    "categories": "TOPS",
+    "sales": 1100
+  },
+  {
+    "items": "PRINTKNIT",
+    "month": "2024-09",
+    "channel": "直販",
+    "categories": "TOPS",
+    "sales": 1300
+  },
+  {
+    "items": "CUT",
+    "month": "2024-09",
+    "channel": "直販",
+    "categories": "TOPS",
+    "sales": 1150
+  },
+  {
+    "items": "KNIT",
+    "month": "2024-09",
+    "channel": "直販",
+    "categories": "TOPS",
+    "sales": 1000
+  }
+]
