@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* タイポグラフィー */
+/* 文字はh1, h2, h3, text-base, text-sm, text-xsとfont-normal, font-boldを組み合わせて表現する。 */
+/* 上記でカバーできないものは、各コンポーネントにtailwindのユーティリティクラスを直接記入して調整する。 */
+@layer base {
+  ::selection {
+    /* テキストハイライト時の背景色 */
+    @apply bg-blue-500 text-white;
+  }
+  body {
+    /* 文字の基本設定は以下の2点 */
+    @apply overscroll-auto font-normal text-black;
+  }
+  h1 {
+    /* Heading1 */
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.16px;
+  }
+
+  h2 {
+    /* Heading2 */
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.12px;
+  }
+
+  h3 {
+    /* Heading3 */
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.1px;
+  }
+
+  main {
+    @apply animate-[slidein] duration-1000;
+  }
+}
+
+@layer components {
+
+  /* チェックボックス */
+
+  .checkbox {
+    @apply h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2  focus:ring-blue-500;
+  }
+
+  /*テーブルの共通スタイル*/
+
+  @keyframes slidein {
+    from {
+      @apply opacity-0;
+    }
+
+    to {
+      @apply opacity-100;
+    }
+  }
+
+  table {
+    @apply table-auto transition-all duration-200 ease-in-out;
+  }
+
+  /*thead*/
+
+  table > thead {
+    @apply sticky top-16 z-50 border-b border-gray-100 bg-blue-50 text-center text-sm font-bold;
+  }
+
+  table > thead > tr > th {
+    @apply whitespace-nowrap border-white bg-blue-50 px-2 py-4;
+  }
+
+  /*tbody*/
+  table > tbody {
+    @apply transition duration-300 ease-in-out;
+  }
+
+  table > tbody > tr {
+    @apply transition-all duration-200 ease-in-out hover:bg-gray-50;
+  }
+
+  table > tbody > tr > td {
+    @apply border-b border-gray-100 px-1 py-1;
+  }
+
+  table > tbody > tr > .sticky {
+    @apply bg-white;
+  }
+
+  /*2カラムレイアウトの画面で使用するtbody*/
+  tbody.tbodylist > tr > td {
+    @apply p-2;
+  }
+
+  .modal {
+    @apply invisible fixed left-0 top-0 z-50 flex h-full w-full items-end justify-end opacity-0 transition-all duration-300 ease-in-out;
+  }
+
+  .modal.active {
+    @apply visible opacity-100;
+  }
+
+  .modal-background {
+    @apply absolute h-full w-full bg-black bg-opacity-50;
+  }
+
+  .modal-content {
+    @apply relative h-full w-2/5 translate-x-full bg-white p-10 shadow-lg transition-all duration-300 ease-in-out;
+  }
+
+  .modal-content.wide {
+    @apply w-3/4;
+  }
+
+  .modal.active .modal-content {
+    @apply translate-x-0;
+  }
+}

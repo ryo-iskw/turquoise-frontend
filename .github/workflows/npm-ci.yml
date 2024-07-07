@@ -1,0 +1,23 @@
+# INFO: package.jsonとpackage-lock.jsonの整合性を確認する
+on:
+  pull_request:
+
+# 同じブランチでワークフローが重複して実行されたとき、古いワークフローを自動キャンセルする
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  npm-ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      # package.jsonとpackage-lock.jsonの整合性を確認する
+      - run: npm ci
